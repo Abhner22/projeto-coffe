@@ -17,29 +17,29 @@
 }
 
 header {
-    width: 100%;
-    background-image: url(recursos/imagens-proprias/foto-de-fundo.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 825px;
     padding: 60px 0;
+    width: 80%;
+
+  margin: auto;
+ 
 }
 
 body {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--gap-lateral);
+
     font-family: "Baloo 2", sans-serif;
     color: var(--cor-primaria);
 }
 
-.topo-parte-1 {
-    display: flex;
-    align-items: center;
+.menu {
+    display:flex;
     justify-content: space-between;
-    padding: 0 var(--gap-lateral);
 }
+
+.lado-esquerdo-menu {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .parte-1-texto span {
     font-size: 22px;
@@ -50,26 +50,38 @@ body {
     width: 38px;
     height: 38px;
 }
-.parte-2-texto {
-    background-color: var(--cor-secundaria);
-
-    width: 103px;
-    height: 38px;
-    border-radius: 6px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .parte-esquerda {
     display:flex;
     align-items: center;
     gap: 8px;
 
-    padding: 8px 14px;
     color: var(--cor-terciaria);
     line-height: 1;
+}
+
+.parte-esquerda button {
+    background-color: var(--cor-secundaria);
+    border-radius:6px;
+    border: none;
+
+    height: 38px;
+    width: 108px;
+
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 5px;
+
+    color: #00955A;
+    font-size: 14px;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+.parte-esquerda p{
+    white-space: nowrap;
 }
 
 .parte-direita {
@@ -80,8 +92,14 @@ body {
     padding: 8px;
 }
 
+.parte-direita button {
+    background-color: var(--cor-secundaria);
+    border-radius:6px;
+    border: none;
 
-
+    height: 38px;
+    width: 38px;
+}
 
 .cafe-img {
     width: 120px;
@@ -91,4 +109,19 @@ body {
 .group {
     width: 485px;
     height: 570px;
+}
+
+.cafe-perfeito {
+    background-image: url(recursos/imagens-proprias/foto-de-fundo.svg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 825px;
+}
+
+.cafe-perfeito-texto {
+    display:flex;
+    margin-left: 144px;
 }
