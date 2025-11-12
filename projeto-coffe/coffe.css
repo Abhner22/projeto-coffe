@@ -1,127 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
 
 :root {
-    --cor-primaria: #332A1A;
-    --cor-secundaria: #E5F9EF;
-    --cor-terciaria: #00955A;
+  --cor-primaria: #332a1a;
+  --cor-secundaria: #e5f9ef;
+  --cor-terciaria: #00955a;
 
-    --gap-lateral: 40px;
-    --max-width: 1200px;
+  --gap-lateral: 40px;
+  --max-width: 1200px;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    padding: 60px 0;
-    width: 80%;
+
+  width: 80%;
 
   margin: auto;
- 
+  position: fixed;
+  top: 0;
 }
 
 body {
-
-    font-family: "Baloo 2", sans-serif;
-    color: var(--cor-primaria);
+  font-family: "Baloo 2", sans-serif;
+  color: var(--cor-primaria);
+  margin:0;
 }
 
 .menu {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
 }
 
 .lado-esquerdo-menu {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
 
 .parte-1-texto span {
-    font-size: 22px;
-    font-weight: 700;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.parte-1-texto img{
-    width: 38px;
-    height: 38px;
+.parte-1-texto img {
+  width: 38px;
+  height: 38px;
 }
 
 .parte-esquerda {
-    display:flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-    color: var(--cor-terciaria);
-    line-height: 1;
+  color: var(--cor-terciaria);
+  line-height: 1;
 }
 
 .parte-esquerda button {
-    background-color: var(--cor-secundaria);
-    border-radius:6px;
-    border: none;
+  background-color: var(--cor-secundaria);
+  border-radius: 6px;
+  border: none;
 
-    height: 38px;
-    width: 108px;
+  height: 38px;
+  width: 108px;
 
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 5px;
 
-    color: #00955A;
-    font-size: 14px;
-    font-weight: 400;
+  color: #00955a;
+  font-size: 14px;
+  font-weight: 400;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-.parte-esquerda p{
-    white-space: nowrap;
+.parte-esquerda p {
+  white-space: nowrap;
 }
 
 .parte-direita {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 8px;
+  padding: 8px;
 }
 
 .parte-direita button {
-    background-color: var(--cor-secundaria);
-    border-radius:6px;
-    border: none;
+  background-color: var(--cor-secundaria);
+  border-radius: 6px;
+  border: none;
 
-    height: 38px;
-    width: 38px;
+  height: 38px;
+  width: 38px;
 }
 
 .cafe-img {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .group {
-    width: 485px;
-    height: 570px;
+  width: 485px;
+  height: 570px;
 }
 
 .cafe-perfeito {
-    background-image: url(recursos/imagens-proprias/foto-de-fundo.svg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(recursos/imagens-proprias/foto-de-fundo.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    width: 100%;
-    height: 825px;
+  width: 100%;
+ height: 100vh;  
 }
 
-.cafe-perfeito-texto {
-    display:flex;
-    margin-left: 144px;
+.cafe-perfeito-texto h1, p{
+  display: flex;
+  margin-left: 144px;
+  background-color: turquoise;
 }
