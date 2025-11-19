@@ -15,14 +15,6 @@
   box-sizing: border-box;
 }
 
-header {
-
-  width: 80%;
-
-  margin: auto;
-  position: fixed;
-  top: 0;
-}
 
 body {
   font-family: "Baloo 2", sans-serif;
@@ -30,11 +22,25 @@ body {
   margin:0;
 }
 
+header {
+
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+}
+
+
 .menu {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
-    
+  border-style: dashed;
+  border-color: aqua;
+  width: 1440px;
 }
 
 .lado-esquerdo-menu {
@@ -122,8 +128,57 @@ body {
  height: 100vh;  
 }
 
-.cafe-perfeito-texto h1, p{
-  display: flex;
+.cafe-perfeito-texto .p-cafe-perfeito .car-texto {
+  gap: 25px;
+}
+
+.cafe-perfeito-texto {
+  
+  display: inline-grid;
+  padding-top: 239px;
+}
+
+.cafe-perfeito-texto h1 {
+  
   margin-left: 144px;
-  background-color: turquoise;
+  border-color: turquoise;
+  border-style: groove;
+}
+
+.cafe-perfeito-texto h1 {
+  display: flex;
+  font-weight: 800;
+  font-size: 48px;
+  width: 588px;
+}
+
+.cafe-perfeito-texto .p-cafe-perfeito {
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 144px;
+  border-color: aqua;
+  border-style: groove;
+  width: 588px;
+}
+
+.car-texto {
+  display: flex;
+  gap:20px;
+  border-style:inset;
+  border-color:red;
+  width: 567px;
+  padding-left: 144px;
+}
+
+.car-texto .car-1 {
+  display: flex;
+  gap:12px;
+  flex-direction: column;
+}
+
+.car-texto .car-2 {
+  display: flex;
+  gap:12px;
+  flex-direction: column;
 }
